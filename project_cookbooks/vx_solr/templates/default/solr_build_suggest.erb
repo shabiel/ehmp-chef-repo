@@ -1,0 +1,3 @@
+#build the Solr suggestion index at 2am
+0 2 * * * root curl "http://localhost:<%= @solr_port %>/solr/vpr/suggest?spellcheck.build=true&suggest.build=true&spellcheck.dictionary=suggest"
+
